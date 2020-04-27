@@ -1,0 +1,14 @@
+<mapper namespace="product">
+
+<!--    sql的唯一标识：namespace,id来组成:statementId-->
+    <select id="selectList" resultType="com.lagou.pojo.user" paramterType="com.lagou.pojo.user">
+        select * from product
+    </select>
+
+    <select id="selectOne" resultType="com.lagou.pojo.user" paramterType="com.lagou.pojo.user">
+        select * from product where id = #{id} and username = #{username}
+    </select>
+
+
+
+</mapper>
